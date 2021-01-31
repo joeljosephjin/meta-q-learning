@@ -86,7 +86,7 @@ parser.add_argument('--lr_gamma', default = 0.8, type=float, help = 'learning ra
 
 
 config_args = vars(parser)
-wandb.init(project="mrl-project", entity="mql", config=config_args)
+wandb.init(project="mrl-project", entity="joeljosephjin", config=config_args)
 
 
 def update_lr(eparams, iter_num, alg_mth):
