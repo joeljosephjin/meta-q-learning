@@ -695,6 +695,8 @@ if __name__ == "__main__":
 
     # Evaluate untrained policy
     eval_results = [evaluate_policy(env, alg, episode_num, update_iter, etasks=eval_tasks, eparams=args)] 
+
+    
     if args.enable_train_eval:
         train_subset = np.random.choice(train_tasks, len(eval_tasks))
         train_subset_tasks_eval = evaluate_policy(env, alg, episode_num, update_iter,
